@@ -1,0 +1,160 @@
+.Experience-container {
+  max-width: 80%;
+  margin: 4rem auto;
+  padding: 5rem 5rem;
+  border: 3px solid black;
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.Experience-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: -2.5vh;
+  font-weight: 700;
+  color: #00c6ff;
+  letter-spacing: 1px;
+}
+
+.Experience-content {
+  width: 75%;
+  margin: 0 auto 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: auto;
+    height: 5.5vh;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+
+  .logo-label {
+    font-size: 0.9rem;
+    color: #ddd;
+    text-align: center;
+  }
+
+  &:hover img {
+    transform: scale(1.25);
+    transition: transform 0.55s ease;
+    cursor: pointer;
+  }
+}
+
+.Experience-content.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // center the wrapped content
+  gap: 5rem; // optional: adds spacing between logos
+  margin-bottom: 2rem;
+}
+
+.Experience-title2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #09caff;
+  margin-bottom: 1rem;
+}
+
+.Experience-text {
+  padding-left: 1rem;
+}
+
+.Experience-entry {
+  margin-bottom: 2vh;
+}
+
+.Experience-role {
+  font-size: 1.5vh;
+  font-weight: 800;
+  color: #c686ff;
+}
+
+.Experience-dates {
+  font-size: 1.5vh;
+  color: #bbb;
+  font-weight: 200;
+  margin-top: -1.5vh;
+  margin-bottom: -0.1vh;
+}
+
+.Experience-description {
+  font-size: 1.2vh;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.Experience-skills {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-badge {
+  background-color: #1e00ff; // Purple shade
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5vh;
+  box-shadow: 0 0 1vh rgb(0, 0, 0);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.skill-badge:hover {
+  background-color: #7d00c0; // Purple shade
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .Experience-content {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1rem;
+  }
+
+  .logo-wrapper img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-label {
+    font-size: 0.75rem;
+  }
+
+  .Experience-title {
+    font-size: 2rem;
+  }
+
+  .Experience-title2 {
+    font-size: 1.4rem;
+  }
+
+  .experience-role {
+    font-size: 1rem;
+  }
+
+  .experience-description {
+    font-size: 0.95rem;
+  }
+}

@@ -2,38 +2,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vh 5vh;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  padding: clamp(1rem, 1.5vh + 0.5rem, 2rem) clamp(2rem, 5vw, 4rem);
+  margin: 1rem 2vw 2rem;
   background: linear-gradient(to right, #0072ff, #00c6ff);
   color: white;
   font-family: 'Segoe UI', sans-serif;
   flex-wrap: wrap;
-  border-radius: 4vh;
-  box-shadow: 0 4px 15px rgb(0, 0, 0); /* subtle shadow for depth */
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .header-left {
   h1 {
     margin: 0;
-    font-size: 3vh;
+    font-size: clamp(1.5rem, 3vh, 2.5rem);
     font-weight: 900;
+    line-height: 1;
   }
 
   h2 {
-    font-size: 3vh;
+    font-size: clamp(1.5rem, 3vh, 2.5rem);
     font-weight: 900;
-    margin-bottom: -0.2vh;
-    margin-top: -3.3vh;
+    margin: -1.5rem 0 0.5rem;
+    line-height: 1;
   }
 
   h3 {
     margin: 0;
+    font-size: clamp(1rem, 1.75vh, 1.5rem);
     font-weight: 400;
-    font-size: 1.75vh;
-    opacity: 0.85; /* slight transparency for subtlety */
+    opacity: 0.85;
   }
 }
 
@@ -41,26 +39,60 @@
   .nav-list {
     list-style: none;
     display: flex;
-    gap: 3vw;
+    gap: clamp(1rem, 3vw, 2rem);
     margin: 0;
     padding: 0;
-    font-size: 2.5vh;
+    font-size: clamp(1rem, 2.5vh, 1.5rem);
 
     li {
       position: relative;
 
       a {
+        position: relative;
+        font-size: 1.75vw;
         color: white;
         text-decoration: none;
         font-weight: bold;
-        cursor: pointer;
-        transition: color 0.5s ease, transform 0.5s ease; /* smooth color and transform transition */
+        padding: 0.5rem 0;
+        transition: color 0.3s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -0.25rem;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: white;
+          transition: width 0.3s ease;
+        }
 
         &:hover {
           color: #223a8c;
-          transform: scale(1.5); /* slight scale up for hover feedback */
+        }
+
+        &:hover::after {
+          width: 100%;
         }
       }
+    }
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .header-right {
+    margin-top: 1rem;
+
+    .nav-list {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 }

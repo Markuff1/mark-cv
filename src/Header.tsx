@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
 import "./Header.scss";
 
 function Header() {
-
   return (
     <header className="header">
       <div className="header-left">
@@ -13,9 +11,9 @@ function Header() {
 
       <nav className="header-right">
         <ul className="nav-list">
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/about">Projects</Link></li>
-          <li><Link to="/experience">Experience</Link></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
     </header>
