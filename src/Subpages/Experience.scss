@@ -37,7 +37,7 @@
 
   img {
     width: auto;
-    height: 5.5vh;
+    height: 5rem;
     object-fit: contain;
     margin-bottom: 0.5rem;
     filter: brightness(0) invert(1);
@@ -45,8 +45,10 @@
   }
 
   .logo-label {
-    font-size: 0.9rem;
-    color: #ddd;
+    font-size: 1rem;
+    margin-top: 0.2vh;
+    color: #cf90ff;
+    font-weight: bold;
     text-align: center;
   }
 
@@ -69,6 +71,7 @@
   font-size: 2rem;
   font-weight: 600;
   color: #09caff;
+  text-decoration: underline;
   margin-bottom: 1rem;
 }
 
@@ -95,7 +98,7 @@
 }
 
 .Experience-description {
-  font-size: 1.2vh;
+  font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
   line-height: 1.5;
@@ -114,7 +117,7 @@
   padding: 0.3rem 0.7rem;
   border-radius: 0.5vh;
   box-shadow: 0 0 1vh rgb(0, 0, 0);
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 

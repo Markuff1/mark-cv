@@ -43,12 +43,12 @@ function Experience() {
 
   const learningGoals = [
     {
-      text: "Currently learning software development with React, TypeScript, and SQL.",
-      skills: ["React", "TypeScript", "SQL"]
+      text: "TryHackMe - Using the Website TryHackMe to learn more about Penetrantion testing and Cybersecurity - It has been used to not only gain the knowledge of the different pen testing techniques but also to gain some practical experience by using the Lynux IDE that they provide and complete some of the testing. Some examples of the training I've done, are in the projects below",
+      skills: ["Penetration Testing","Lynux","CyberSecurity"]
     },
     {
-      text: "Exploring Penetration Testing and Cyber Security fundamentals through hands-on labs and online courses.",
-      skills: ["Cyber Security", "Penetration Testing", "Networking Basics"]
+      text: "LinkedIn Training - I've also been doing a few LinkedIn Courses as well in my spare time to do with React.ts Web Development, Automation Testing to do with Selenium as well as some general Software Testing learning to do with SQL. Some examples of the training I've done, are in the projects below ",
+      skills: ["React", "Typescript", "Selenium", "Manual Testing"]
     }
   ];
 
@@ -87,7 +87,7 @@ function Experience() {
 
       {/* Independent Learning Section */}
       <div className="Experience-section">
-        <h2 className="Experience-title2">Independent Learning</h2>
+        <h2 className="Experience-title2">Independent Training</h2>
         <div className="Experience-text">
           {learningGoals.map(({ text, skills }, index) => (
             <div key={index} className="Experience-entry">

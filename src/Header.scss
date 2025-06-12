@@ -47,6 +47,14 @@
     li {
       position: relative;
 
+       &:not(:last-child)::after {
+        content: '|';
+        color: white;
+        font-size: 1.5vw;
+        padding: 0 0.75rem;
+        margin-left: 1vw;
+      }
+
       a {
         position: relative;
         font-size: 1.75vw;

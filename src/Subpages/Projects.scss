@@ -1,0 +1,37 @@
+.Projects-container {
+  max-width: 80%;
+  margin: 2rem auto;
+  padding: 5rem;
+  border: 3px solid black;
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.Projects-title {
+  text-align: center;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  margin-top: -2.5vh;
+  margin-bottom: 1vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #00c6ff;
+}
+
+.Projects-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .Projects-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

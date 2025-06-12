@@ -1,19 +1,9 @@
-import Headshot from "./Headshot.png";
+import Headshot from "./HeadshotV2.png";
 import LocationIcon from "../Subpages/Logos/location.png";
 import EmailIcon from "../Subpages/Logos/email.png";
 import PhoneIcon from "../Subpages/Logos/phone.png";
 
 import "./AboutMe.scss";
-
-const handleDownload = () => {
-  const link = document.createElement('a');
-  link.href = '/MarksCV.pdf'; // Path relative to the public folder
-  link.download = 'Mark_Nixon_CV.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
-
 
 function AboutMe() {
   return (
@@ -50,9 +40,9 @@ function AboutMe() {
               <img src={PhoneIcon} alt="Phone" />
               <span>+44 7305 394465</span>
             </div>
-              <button className="CVButton" onClick={handleDownload}>
+              <a href="/mark-cv/MarksCV.pdf" download className="CVButton">
                 Download CV
-              </button>
+              </a>
           </div>
         </div>
       </div>
