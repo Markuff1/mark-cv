@@ -1,0 +1,77 @@
+.about-me-container {
+  max-width: 90%;
+  margin: 4vh auto; /* centers container horizontally and adds vertical margin */
+  padding: 2vh 3vw;
+  border: 3px solid black; /* black box border */
+  border-radius: 12px;
+  background-color: #111; /* optional dark background to contrast with border */
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-me-title {
+  text-align: center;
+  font-size: 4vh;
+  margin-bottom: 1vh;
+  margin-top: -1vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #00c6ff;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.headshot {
+  width: 35vh;
+  height: auto;
+  border-radius: 25%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+
+  h2 {
+    margin: 0 0 0.75rem 0;
+    font-size: 3vh;
+    margin-bottom: -1.5vh;
+    color: #00aaff;
+  }
+
+  p {
+    font-size: 2vh;
+    line-height: 1.5;
+    color: #ddd;
+  }
+}
+
+/* Responsive: stack image and text on smaller screens */
+@media (max-width: 600px) {
+  .about-me-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headshot {
+    margin-bottom: 1.5vh;
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-text {
+    h2 {
+      font-size: 2.5vh;
+    }
+
+    p {
+      font-size: 1.8vh;
+    }
+  }
+}
