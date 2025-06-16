@@ -1,12 +1,24 @@
-.Homebackground{
-    background: linear-gradient(to right, #08193e, #36074c);
-    background-size: 100%;
-    background-repeat: repeat;
-    position: fixed;
-    inset: 0;
-    overflow-y: scroll;
+.Homebackground {
+  background: linear-gradient(270deg, #08193e, #36074c, #08193e);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+  position: fixed;
+  inset: 0;
+  overflow-y: scroll;
 }
 
-html{
-    scroll-behavior: smooth;
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

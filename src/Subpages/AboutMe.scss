@@ -28,7 +28,7 @@
 }
 
 .headshot {
-  width: clamp(125px, 30vw, 400px);
+  width: clamp(160px, 40vw, 600px);
   height: auto;
   border-radius: 25%;
   object-fit: cover;
@@ -42,7 +42,8 @@
 
   h2 {
     font-size: clamp(1.25rem, 2.5vw, 2rem);
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.25rem;
+    margin-bottom: -1rem;
     color: #00aaff;
   }
 
@@ -69,6 +70,27 @@
     img {
       width: 28px;
       height: 28px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    span {
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+
+  .contact-itemv2 {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    color: #ddd;
+
+    img {
+      width: 50px;
+      height: auto;
       object-fit: contain;
       filter: brightness(0) invert(1);
     }

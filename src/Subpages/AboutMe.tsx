@@ -2,6 +2,8 @@ import Headshot from "./HeadshotV2.png";
 import LocationIcon from "../Subpages/Logos/location.png";
 import EmailIcon from "../Subpages/Logos/email.png";
 import PhoneIcon from "../Subpages/Logos/phone.png";
+import GithubIcon from "../Subpages/Logos/github.png";
+import LinkedInIcon from "../Subpages/Logos/linkedin.png";
 
 import "./AboutMe.scss";
 
@@ -15,16 +17,20 @@ function AboutMe() {
         <div className="about-text">
           <h2>Hi, I’m Mark</h2>
           <p>
-            I currently work as a software tester, and I really enjoy digging into how things work and 
-            making sure software does what it’s supposed to.<br />
-            
-            I'm now starting to move into software development, learning more about coding and how to 
-            build the things I usually test!<br />
-            
-            I'm also getting into penetration testing and cyber security, which I'm finding super interesting.
-            It’s all part of my goal to understand software from all angles — building it, breaking it (ethically!), 
-            and helping make it better.
+            I currently work at Stalis as a Software Tester and Junior Web Developer, focusing on manual functional and non-functional testing of sensitive NHS hospital data to ensure secure and accurate transfer between databases and our service.<br /><br />
+
+            Alongside testing, I actively contribute to improving internal systems using React, aiming to enhance user experience and streamline workflows.<br /><br />
+
+            I’ve also completed several independent React projects, applying thorough testing practices to ensure quality and reliability.<br /><br />
+
+            I’m committed to continuous learning, having explored penetration testing through platforms like TryHackMe, and completed LinkedIn courses on React and testing methodologies.<br /><br />
+
+            I am passionate about delivering high-quality software solutions and growing my expertise in both development and security testing.
           </p>
+
+
+
+
 
           {/* Contact Details */}
           <div className="contact-info">
@@ -39,6 +45,14 @@ function AboutMe() {
             <div className="contact-item">
               <img src={PhoneIcon} alt="Phone" />
               <span>+44 7305 394465</span>
+            </div>
+            <div className="contact-itemv2">
+              <a href="https://github.com/Markuff1">
+                <img src={GithubIcon} alt="GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/in/mark-nixon-325b84239/">
+                <img src={LinkedInIcon} alt="LinkedIn" />
+              </a>
             </div>
               <a href="/mark-cv/MarksCV.pdf" download className="CVButton">
                 Download CV
