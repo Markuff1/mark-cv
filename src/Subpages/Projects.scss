@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .Projects-container {
   max-width: 80%;
   margin: 2rem auto;
@@ -22,16 +33,125 @@
 
 .Projects-content {
   display: flex;
-  align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+.Project-card {
+  background-color: #1c1c1c;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.6s ease forwards;
+}
 
-/* Responsive layout */
+.Project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 10px rgb(85, 0, 255);
+  cursor: pointer;
+}
+
+.Project-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.Project-name {
+  font-size: 1.5rem;
+  color: #00c6ff;
+  margin-bottom: 0.5rem;
+}
+
+.Project-description {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.Project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.Project-tag {
+  background-color: #1e00ff;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5vh;
+  box-shadow: 0 0 1vh rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.Project-tag:hover {
+  background-color: #7d00c0;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.Project-bullets {
+  margin: 0.5rem 0 1rem 1.2rem;
+  padding: 0;
+  list-style-type: disc;
+  font-size: 0.9rem;
+  color: #ccc;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.Project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.Project-button {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background-color: #00c6ff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 198, 255, 0.3);
+}
+
+.Project-button:hover {
+  background-color: #0099cc;
+  transform: scale(1.03);
+  color: #111;
+}
+
+.Project-disabled {
+  color: gray;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
   .Projects-content {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+  }
+
+  .Project-card {
+    width: 90%;
   }
 }
