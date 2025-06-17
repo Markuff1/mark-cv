@@ -1,5 +1,4 @@
 import "./Projects.scss";
-import { Link } from "react-router-dom";
 import WWEWrestleverseV3Image from "../Subpages/ProjectImages/WWEWrestleverse.png";
 import WWEWrestleverseV2Image from "../Subpages/ProjectImages/WWEWrestleverseHTML.png";
 import JavaGame from "../Subpages/ProjectImages/JavaGame.png"
@@ -163,9 +162,6 @@ function Projects() {
                 ))}
               </div>
               <div className="Project-links">
-                <Link to={project.link} className="Project-button">
-                  View Project
-                </Link>
                 {project.repo ? (
                   <a
                     href={project.repo}

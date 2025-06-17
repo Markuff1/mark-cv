@@ -1,3 +1,11 @@
+$primary-color: rgb(0, 170, 255);
+$secondary-color: rgb(187, 0, 255);
+$tertiary-color: rgb(0, 34, 255);
+$primary-color-dark: rgb(0, 100, 150);
+$secondary-color-dark: rgb(109, 0, 148);
+$primary-color-light: rgb(151, 220, 255);
+$secondary-color-light: rgb(228, 152, 255);
+
 .Experience-container {
   max-width: 80%;
   margin: 4rem auto;
@@ -16,7 +24,7 @@
   margin-bottom: 2rem;
   margin-top: -2.5vh;
   font-weight: 700;
-  color: #00c6ff;
+  color: $primary-color;
   letter-spacing: 1px;
 }
 
@@ -41,20 +49,19 @@
     object-fit: contain;
     margin-bottom: 0.5rem;
     filter: brightness(0) invert(1);
-    transition: transform 0.3s ease;
+    transition: transform 0.50s ease;
   }
 
   .logo-label {
     font-size: 1rem;
     margin-top: 0.2vh;
-    color: #cf90ff;
+    color: $secondary-color;
     font-weight: bold;
     text-align: center;
   }
 
   &:hover img {
     transform: scale(1.25);
-    transition: transform 0.55s ease;
     cursor: pointer;
   }
 }
@@ -70,7 +77,7 @@
 .Experience-title2 {
   font-size: 2rem;
   font-weight: 600;
-  color: #09caff;
+  color:$primary-color;
   text-decoration: underline;
   margin-bottom: 1rem;
 }
@@ -84,9 +91,9 @@
 }
 
 .Experience-role {
-  font-size: 1.5vh;
+  font-size: 1.7vh;
   font-weight: 800;
-  color: #c686ff;
+  color: $secondary-color;
 }
 
 .Experience-dates {
@@ -98,7 +105,7 @@
 }
 
 .Experience-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #ffffff;
   line-height: 1.5;
@@ -112,17 +119,18 @@
 }
 
 .skill-badge {
-  background-color: #1e00ff; // Purple shade
+  background-color: $tertiary-color; // Purple shade
   color: white;
   padding: 0.3rem 0.7rem;
   border-radius: 0.5vh;
   box-shadow: 0 0 1vh rgb(0, 0, 0);
-  font-size: 1rem;
+  transition: background 0.5s ease, transform 0.5s ease;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .skill-badge:hover {
-  background-color: #7d00c0; // Purple shade
+  background-color: $secondary-color; // Purple shade
   transform: scale(1.05);
   transition: transform 0.5s ease;
   cursor: pointer;

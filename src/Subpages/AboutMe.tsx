@@ -17,15 +17,15 @@ function AboutMe() {
         <div className="about-text">
           <h2>Hi, I’m Mark</h2>
           <p>
-            I currently work at Stalis as a Software Tester and Junior Web Developer, focusing on manual functional and non-functional testing of sensitive NHS hospital data to ensure secure and accurate transfer between databases and our service.<br /><br />
+          I currently work at Stalis as a Software Tester and Junior Web Developer, where I focus on manual functional and non-functional testing of sensitive NHS hospital data, ensuring secure and accurate data migration across systems.<br /><br />
 
-            Alongside testing, I actively contribute to improving internal systems using React, aiming to enhance user experience and streamline workflows.<br /><br />
+          In addition to testing, I contribute to the development of internal tools using React, with the goal of improving user experience and optimizing workflows.<br /><br />
 
-            I’ve also completed several independent React projects, applying thorough testing practices to ensure quality and reliability.<br /><br />
+          Outside of work, I’ve built and deployed several independent full-stack React projects, incorporating best practices in testing, database integration, and user authentication.<br /><br />
 
-            I’m committed to continuous learning, having explored penetration testing through platforms like TryHackMe, and completed LinkedIn courses on React and testing methodologies.<br /><br />
+          I’m dedicated to continuous learning—exploring cybersecurity through TryHackMe, and expanding my technical skills through LinkedIn Learning courses in React, software testing, and secure development practices.<br /><br />
 
-            I am passionate about delivering high-quality software solutions and growing my expertise in both development and security testing.
+          I’m passionate about building reliable, high-quality software solutions and growing my expertise in both development and security testing.
           </p>
 
 

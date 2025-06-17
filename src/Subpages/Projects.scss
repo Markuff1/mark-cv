@@ -1,13 +1,11 @@
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+$primary-color: rgb(0, 170, 255);
+$secondary-color: rgb(187, 0, 255);
+$tertiary-color: rgb(0, 34, 255);
+$primary-color-dark: rgb(0, 100, 150);
+$secondary-color-dark: rgb(109, 0, 148);
+$primary-color-light: rgb(151, 220, 255);
+$secondary-color-light: rgb(228, 152, 255);
+
 
 .Projects-container {
   max-width: 80%;
@@ -28,7 +26,7 @@
   margin-bottom: 1vh;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #00c6ff;
+  color: $primary-color;
 }
 
 .Projects-content {
@@ -53,8 +51,8 @@
 }
 
 .Project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 2px 10px rgb(85, 0, 255);
+  transform: translateY(-15px);
+  box-shadow: 0 2px 15px $secondary-color-dark;
   cursor: pointer;
 }
 
@@ -67,12 +65,12 @@
 
 .Project-name {
   font-size: 1.5rem;
-  color: #00c6ff;
+  color: $primary-color;
   margin-bottom: 0.5rem;
 }
 
 .Project-description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -84,18 +82,18 @@
 }
 
 .Project-tag {
-  background-color: #1e00ff;
+  background-color: $tertiary-color;
   color: white;
   padding: 0.3rem 0.7rem;
   border-radius: 0.5vh;
   box-shadow: 0 0 1vh rgb(0, 0, 0);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   transition: transform 0.3s ease;
 }
 
 .Project-tag:hover {
-  background-color: #7d00c0;
+  background-color: $secondary-color;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -105,7 +103,7 @@
   padding: 0;
   list-style-type: disc;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #ffffffa3;
 
   li {
     margin-bottom: 0.4rem;
@@ -123,17 +121,17 @@
   display: inline-block;
   text-align: center;
   color: white;
-  background-color: #00c6ff;
+  background-color: $secondary-color;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 10px rgba(0, 198, 255, 0.3);
+  box-shadow: 0 2px 10px rgba(115, 0, 255, 0.555);
 }
 
 .Project-button:hover {
-  background-color: #0099cc;
+  background-color: $primary-color;
   transform: scale(1.03);
   color: #111;
 }

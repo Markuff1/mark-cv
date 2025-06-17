@@ -26,20 +26,21 @@ function Experience() {
 
   const careerHistory = [
     {
-      role: "Mid-Level Software Tester + Junior Software Developer at Stalis",
-      dates: "Jan 2024 to Present",
-      description:
-        "After finishing my apprenticeship, I have continued to expand my manual and automation testing expertise, while further developing my SQL skills for backend testing and data analysis. I’ve recently started contributing to front-end development on a React-based project, applying my self-taught knowledge of React in a formal environment. This has also given me valuable experience working with Microsoft SQL databases and understanding how front-end and back-end systems interact in a professional healthcare setting.",
-      skills: ["React", "SQL", "Manual Testing", "Automation Testing", "Data Analysis", "Microsoft SQL Server"]
-    },
+    role: "Software Tester & Junior Web Developer at Stalis",
+    dates: "Jan 2024 to Present",
+    description:
+      "After completing my apprenticeship, I transitioned into a Junior Software Tester role and later progressed to a Mid-Level Software Tester. My responsibilities included functional testing on databases, data, and systems to ensure data integrity and application reliability. I began supporting penetration testing efforts by retesting and validating security fixes provided by an external security provider. Additionally, I started contributing to our frontend React application, handling small UI and functionality fixes. I am currently exploring training opportunities to take on more advanced development tasks alongside my testing responsibilities.",
+    skills: ["Manual Testing", "Automation Testing", "React", "SQL", "Microsoft SQL Server", "Data Integrity", "Functional Testing", "Non-Functional Testing", "Security Testing Support"]
+   },
     {
-      role: "Apprentice/Junior Software Tester at Stalis",
+      role: "Apprentice Software Tester at Stalis",
       dates: "Sept 2022 to Jan 2024",
       description:
-        "During my apprenticeship, I gained practical experience in functional and non-functional testing, the software testing lifecycle, Agile methodologies, automation, and accessibility testing. I played a key role in a data archiving project for NHS Trusts, where I independently created test plans, developed and executed test suites, and managed the overall test process. I also worked on verifying NHS database integrity, which strengthened my SQL skills and deepened my understanding of relational databases and data validation.",
-      skills: ["SQL", "Agile", "Accessibility Testing", "Functional Testing", "Test Planning"]
+        "As an apprentice, I developed hands-on experience across the full software testing lifecycle, including functional, non-functional, and accessibility testing. I was responsible for test planning, execution, and reporting within Agile workflows. A key part of my role was supporting NHS data archiving projects—designing test suites, validating data integrity, and troubleshooting SQL queries to ensure reliable and compliant data handling.",
+      skills: ["Test Planning", "Agile", "SQL", "Accessibility Testing", "Functional Testing", "Data Validation", "Test Lifecycle"]
     },
   ];
+
 
   const learningGoals = [
     {
