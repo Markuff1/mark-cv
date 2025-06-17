@@ -12,7 +12,7 @@ function Projects() {
     {
       title: "WWE Universe Tracker V3",
       description:
-        "The 3rd Interaction full-stack web app built using React.ts to manage and track elements of WWE Universe Mode including Champions, Rosters, Shows, and Storylines. Combined my passion for WWE with coding to improve both front-end and back-end development skills.",
+        "The 3rd Interaction full-stack web app built using React.TS to manage and track elements of WWE Universe Mode including Champions, Rosters, Shows, and Storylines. Combined my passion for WWE with coding to improve both front-end and back-end development skills.",
       bullets: [
         "Developed using React, TypeScript, SCSS, and JavaScript for a responsive UI",
         "Built Protected Routes so that users can't bypass the login page",
