@@ -137,7 +137,7 @@ function Projects() {
 
   return (
     <section id="Projects" className="Projects-container">
-      <h1 className="Projects-title">Projects</h1>
+      <h1 className="Projects-title">-- PROJECTS --</h1>
       <div className="Projects-content">
         {projectList.map((project, index) => (
           <div key={index} className="Project-card">

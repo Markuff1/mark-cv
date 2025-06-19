@@ -55,7 +55,7 @@ function Experience() {
 
   return (
     <section id="Experience" className="Experience-container">
-      <h1 className="Experience-title">Experience</h1>
+      <h1 className="Experience-title">-- EXPERIENCE --</h1>
 
       {/* Logos Section */}
       <div className="Experience-content logos">

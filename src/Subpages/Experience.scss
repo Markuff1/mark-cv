@@ -6,6 +6,14 @@ $secondary-color-dark: rgb(109, 0, 148);
 $primary-color-light: rgb(151, 220, 255);
 $secondary-color-light: rgb(228, 152, 255);
 
+@keyframes float {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-20px); }
+  50% { transform: translateY(0); }
+  75%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
 .Experience-container {
   max-width: 80%;
   margin: 4rem auto;
@@ -20,17 +28,21 @@ $secondary-color-light: rgb(228, 152, 255);
 
 .Experience-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: clamp(1.75rem, 4vw, 3rem);
   margin-top: -2.5vh;
+  margin-bottom: 2vh;
   font-weight: 700;
+  letter-spacing: 15px;
   color: $primary-color;
-  letter-spacing: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .Experience-content {
   width: 75%;
-  margin: 0 auto 3rem auto;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   gap: 2rem;
@@ -49,7 +61,8 @@ $secondary-color-light: rgb(228, 152, 255);
     object-fit: contain;
     margin-bottom: 0.5rem;
     filter: brightness(0) invert(1);
-    transition: transform 0.50s ease;
+    transition: transform 0.5s ease;
+    animation: float 3s ease-in-out infinite;
   }
 
   .logo-label {
@@ -66,18 +79,29 @@ $secondary-color-light: rgb(228, 152, 255);
   }
 }
 
+/* Staggered floating delays */
+.logo-wrapper:nth-child(1) img { animation-delay: 0s; }
+.logo-wrapper:nth-child(2) img { animation-delay: 0.2s; }
+.logo-wrapper:nth-child(3) img { animation-delay: 0.4s; }
+.logo-wrapper:nth-child(4) img { animation-delay: 0.6s; }
+.logo-wrapper:nth-child(5) img { animation-delay: 0.8s; }
+.logo-wrapper:nth-child(6) img { animation-delay: 1s; }
+.logo-wrapper:nth-child(7) img { animation-delay: 1.2s; }
+.logo-wrapper:nth-child(8) img { animation-delay: 1.4s; }
+.logo-wrapper:nth-child(9) img { animation-delay: 1.6s; }
+
 .Experience-content.logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; // center the wrapped content
-  gap: 5rem; // optional: adds spacing between logos
+  justify-content: center;
+  gap: 5rem;
   margin-bottom: 2rem;
 }
 
 .Experience-title2 {
   font-size: 2rem;
   font-weight: 600;
-  color:$primary-color;
+  color: $primary-color;
   text-decoration: underline;
   margin-bottom: 1rem;
 }
@@ -119,7 +143,7 @@ $secondary-color-light: rgb(228, 152, 255);
 }
 
 .skill-badge {
-  background-color: $tertiary-color; // Purple shade
+  background-color: $tertiary-color;
   color: white;
   padding: 0.3rem 0.7rem;
   border-radius: 0.5vh;
@@ -127,15 +151,13 @@ $secondary-color-light: rgb(228, 152, 255);
   transition: background 0.5s ease, transform 0.5s ease;
   font-size: 0.8rem;
   font-weight: 500;
-}
 
-.skill-badge:hover {
-  background-color: $secondary-color; // Purple shade
-  transform: scale(1.05);
-  transition: transform 0.5s ease;
-  cursor: pointer;
+  &:hover {
+    background-color: $secondary-color;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 600px) {

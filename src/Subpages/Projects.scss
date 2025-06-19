@@ -23,10 +23,11 @@ $secondary-color-light: rgb(228, 152, 255);
   text-align: center;
   font-size: clamp(1.75rem, 4vw, 3rem);
   margin-top: -2.5vh;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 15px;
   color: $primary-color;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .Projects-content {

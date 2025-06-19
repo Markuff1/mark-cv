@@ -10,20 +10,23 @@ import "./AboutMe.scss";
 function AboutMe() {
   return (
     <section id="about-me" className="about-me-container">
-      <h1 className="about-me-title">About Me</h1>
+      <h1 className="about-me-title">-- ABOUT ME --</h1>
 
       <div className="about-me-content">
-        <img src={Headshot} alt="Headshot" className="headshot" />
+        <div className="headshot-wrapper">
+          <img src={Headshot}alt="Headshot" className="headshot" />
+        </div>
+
         <div className="about-text">
-          <h2>Hi, I’m Mark</h2>
+          <h2>Hi, I’m Mark <span className="wavehand" role="img" aria-label="waving hand">👋</span></h2>
           <p>
-          I currently work at Stalis as a Software Tester and Junior Web Developer, where I focus on manual functional and non-functional testing of sensitive NHS hospital data, ensuring secure and accurate data migration across systems.<br /><br />
+          I currently work at Stalis as a Software Tester and Junior Web Developer, where I focus on manual functional and non-functional testing of sensitive NHS hospital data, ensuring secure and accurate data migration across systems.<br />
 
-          In addition to testing, I contribute to the development of internal tools using React, with the goal of improving user experience and optimizing workflows.<br /><br />
+          In addition to testing, I contribute to the development of internal tools using React, with the goal of improving user experience and optimizing workflows.<br />
 
-          Outside of work, I’ve built and deployed several independent full-stack React projects, incorporating best practices in testing, database integration, and user authentication.<br /><br />
+          Outside of work, I’ve built and deployed several independent full-stack React projects, incorporating best practices in testing, database integration, and user authentication.<br />
 
-          I’m dedicated to continuous learning—exploring cybersecurity through TryHackMe, and expanding my technical skills through LinkedIn Learning courses in React, software testing, and secure development practices.<br /><br />
+          I’m dedicated to continuous learning—exploring cybersecurity through TryHackMe, and expanding my technical skills through LinkedIn Learning courses in React, software testing, and secure development practices.<br />
 
           I’m passionate about building reliable, high-quality software solutions and growing my expertise in both development and security testing.
           </p>
