@@ -4,6 +4,8 @@ import EmailIcon from "../Subpages/Logos/email.png";
 import PhoneIcon from "../Subpages/Logos/phone.png";
 import GithubIcon from "../Subpages/Logos/github.png";
 import LinkedInIcon from "../Subpages/Logos/linkedin.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import "./AboutMe.scss";
 
@@ -14,7 +16,12 @@ function AboutMe() {
 
       <div className="about-me-content">
         <div className="headshot-wrapper">
-          <img src={Headshot}alt="Headshot" className="headshot" />
+          <LazyLoadImage
+            alt="Headshot"
+            src={Headshot}
+            effect="blur"
+            className="headshot"
+          />
         </div>
 
         <div className="about-text">

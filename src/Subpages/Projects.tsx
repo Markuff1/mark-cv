@@ -6,6 +6,7 @@ import HarryBDayPage from "../Subpages/ProjectImages/BirthdayWebsite.png"
 import CVWebsite from "../Subpages/ProjectImages/CVWebsite.png"
 import ImageResizer from "../Subpages/ProjectImages/ImageResizer.png"
 import ChessGame from "../Subpages/ProjectImages/ChessGame.png"
+import MyRunnerV1 from "../Subpages/ProjectImages/ChessGame.png"
 
 function Projects() {
   const projectList = [
@@ -29,6 +30,18 @@ function Projects() {
       link: "/projects/WWEWrestleverseV3",
       repo: "https://github.com/Markuff1/Wrestleverse2k25",
       site: "https://wweuniverse.app",
+    },
+    {
+      title: "NyRunner App",
+      description:
+        "A Running App using Stava's API that display recent activities and Information about those activities like Pace, Distance, Time as well as displays an Interactive map and a interactive running pace graph that shows how your pace has changed during your activity",
+      bullets: [
+        
+      ],
+      tech: ["React", "TypeScript", "Firebase", "PHP", "SCSS", "JavaScript", "VSCode"],
+      image: MyRunnerV1,
+      link: "/projects/MyRunner",
+      repo: "https://github.com/Markuff1/MyRunner",
     },
     {
       title: "WWE Universe Tracker V2",
