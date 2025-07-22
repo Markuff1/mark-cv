@@ -6,147 +6,146 @@ import HarryBDayPage from "../Subpages/ProjectImages/BirthdayWebsite.png"
 import CVWebsite from "../Subpages/ProjectImages/CVWebsite.png"
 import ImageResizer from "../Subpages/ProjectImages/ImageResizer.png"
 import ChessGame from "../Subpages/ProjectImages/ChessGame.png"
-import MyRunnerV1 from "../Subpages/ProjectImages/ChessGame.png"
+import MyRunnerV1 from "../Subpages/ProjectImages/MyRunner.png"
 
 function Projects() {
-  const projectList = [
-    {
-      title: "WWE Universe Tracker V3",
-      description:
-        "The 3rd Interaction full-stack web app built using React.TS to manage and track elements of WWE Universe Mode including Champions, Rosters, Shows, and Storylines. Combined my passion for WWE with coding to improve both front-end and back-end development skills.",
-      bullets: [
-        "Developed using React, TypeScript, SCSS, and JavaScript for a responsive UI",
-        "Built Protected Routes so that users can't bypass the login page",
-        "Started Building an AI ChatBot and I am currently training that AI chatbot so that It can answer questions about my Website for new users but this is stil in Developement and Hasn't been tested and push to Live",
-        "Used Firebase and PHP for secure user authentication and data storage",
-        "Implemented features like title histories, roster management, and weekly show tracking",
-        "Built a login verification system to manage user access",
-        "Gained experience in full-stack development and real-time database interactions",
-        "Relearned how to deploy websites using Github Pages as it is a different process with a React.ts Website",
-        "This is also the first project, I started doing some Penetration testing with, which is what made me develope the Login system and Protected Routes but I'm still learning and Have got lots more to add"
-      ],
-      tech: ["React", "TypeScript", "Firebase", "PHP", "SCSS", "JavaScript", "VSCode"],
-      image: WWEWrestleverseV3Image,
-      link: "/projects/WWEWrestleverseV3",
-      repo: "https://github.com/Markuff1/Wrestleverse2k25",
-      site: "https://wweuniverse.app",
-    },
-    {
-      title: "NyRunner App",
-      description:
-        "A Running App using Stava's API that display recent activities and Information about those activities like Pace, Distance, Time as well as displays an Interactive map and a interactive running pace graph that shows how your pace has changed during your activity",
-      bullets: [
-        
-      ],
-      tech: ["React", "TypeScript", "Firebase", "PHP", "SCSS", "JavaScript", "VSCode"],
-      image: MyRunnerV1,
-      link: "/projects/MyRunner",
-      repo: "https://github.com/Markuff1/MyRunner",
-    },
-    {
-      title: "WWE Universe Tracker V2",
-      description:
-        "The was the 2nd Interation of my Wrestleverse Website which I made using HTML, CSS and JavaScript however there were noticeable problems with the Loading of Images and bugs with Login so moved to V3 using React",
-      bullets: [
-        "Developed using HTML, CSS, Javascript",
-        "Learnt to use Custom Domain Names, How to buy them using NameCheap, how to connect them and Understanding what a domain is, what a CName is and How to clean up the URL as well as how to deploy these sites on Github pages",
-        "Used PHP for the Login and Verification of Login however this has since stopped working as the website is quite old now that I've moved on the 3rd version",
-        "Created a Feedback page that links directly to a google doc using Javascript for improvement requests and bugs"
-      ],
-      tech: ["HTML","CSS","JavaScript","PHP","Google Doc Intergration","Github Pages"],
-      image: WWEWrestleverseV2Image,
-      link: "/projects/WWEWrestleverseV2",
-      repo: "https://github.com/Markuff1/WrestleVerse",
-      site: "https://thewrestleverse.co.uk/",
-    },
-    {
-      title: "2D Adventure Game",
-      description:
-        "A pixel-style 2D game where players explore an open world, collect keys and treasures, and unlock new zones. Created to deepen my understanding of game logic and canvas rendering.",
-      bullets: [
-        "Built using Java and the eclipse IDE",
-        "Designed a tile-based world system with collision detection",
-        "Implemented item collection, key/chest interactions, and player health mechanics",
-        "Built up on my knowledge of OOP (Object Orientated Programming)",
-        "Added Map creation based on a .txt file",
-        "Create a feature where to reduce lag, only the map in the User POV is generated and it the rest of the map generates as the player moves"
-
-      ],
-      tech: ["Java","OOP","Eclipse IDE"],
-      image: JavaGame,
-      link: "/projects/2d-adventure-game",
-      repo: "",
-      site: "",
-    },
-    {
-      title: "Happy Birthday Quiz Website",
-      description:
-        "An Informal but interactive birthday-themed quiz site with FormSpree integration to get Form input results. Designed for a personalized user experience and built as a fun front-end project.",
-      bullets: [
-        "Used React and TypeScript for a dynamic quiz UI",
-        "Integrated FormSpee to send results of the quiz to a database and when I result is recieved, I will get an Email",
-        "Focused on responsive design and user experience",
-      ],
-      tech: ["React", "TypeScript", "FormSpree", "SCSS"],
-      image: HarryBDayPage,
-      link: "/projects/birthday-quiz",
-      repo: "",
-      site: "",
-    },
-    {
-      title: "CV Portfolio Website",
-      description:
-        "The very website you're viewing now – built to showcase my projects, experience, and technical capabilities in a professional portfolio format.",
-      bullets: [
-        "Built using React, TypeScript, and SCSS",
-        "Mobile-responsive with animated transitions and routing",
-        "Showcases real projects, training, and technical background",
-        "Integrated a CV Download button use the PDF file",
-      ],
-      tech: ["React", "TypeScript", "SCSS", "Vite","File Download"],
-      image: CVWebsite,
-      link: "",
-      repo: "https://github.com/yourusername/cv-portfolio",
-      site: "https://markuff1.github.io/mark-cv/",
-    },
-    {
-      title: "Image Resizer Tool",
-      description:
-        "Not the Flashest UI however this is a Tool I built when building other Projects as alot of the images I was creating and using had massive file sizes so needed a quick program to losslessly compress them",
-      bullets: [
-      "Used Python with OpenCV to resize and compress images",
-      "Built a GUI using Tkinter for intuitive user interaction",
-      "Added file dialog support for selecting input/output paths",
-      "Built on my College Knowledge of Image compression",
-      "Enabled JPEG quality control and custom max dimensions",
-      "Prevented upscaling to preserve original image quality",
-      "Displayed success/error messages using message boxes"
+ const projectList = [
+  {
+    title: "MyRunner App",
+    description:
+      "A performance-optimized running tracker that integrates with the Strava API to visualize personal fitness data. The app displays recent activities (pace, distance, time, route) using dynamic charts and maps, supports goal tracking (weekly distance/time), and includes a configurable settings panel for units and target thresholds. Designed with modular architecture using React, TypeScript, Firebase, and PHP, with built-in performance enhancements like lazy loading and data export functionality.",
+    bullets: [
+      "Fetched authenticated activity data from Strava’s API and transformed it into structured datasets using TypeScript",
+      "Rendered interactive route maps using GeoJSON + Leaflet, allowing zoom and pan for GPS-accurate activity paths",
+      "Visualized pace progression with real-time line graphs using Chart.js and React state management",
+      "Implemented client-side CSV export to download the last 50 activities using JavaScript Blob APIs",
+      "Added ‘Load More’ pagination to minimize initial render time and improve UX for users with long activity histories",
+      "Created a settings dashboard for users to switch between kilometers/miles and adjust weekly goal thresholds",
+      "Used Firebase Authentication to securely manage user sessions and sync personalized settings",
+      "Structured components for modular scalability using React hooks, context, and custom utility functions"
     ],
-      tech: ["Python", "Image Uploader", "File Handling"],
-      image: ImageResizer,
-      link: "/projects/image-resizer",
-      repo: "https://github.com/Markuff1/Image-Resizer",
-      site: "",
-    },
-    {
-    "title": "Chess App with CPU Opponent",
-    "description": 
-      "An interactive chess game built with React where users can play against a simple AI opponent. The AI performs valid moves, including capturing pieces, while the app validates player moves, detects game-over conditions such as checkmate and stalemate, and allows game restarts.",
-    "bullets": [
-      "Developed AI that selects random or capture moves to challenge the player",
-      "Implemented full move validation and game state tracking using chess.js",
-      "Provided user interface with React Chessboard for seamless interaction",
-      "Handled game over scenarios including checkmate, stalemate, draws, and insufficient material",
-      "Enabled game restart functionality for repeated play sessions Using either the button or I also added keyboard integration so that just the enterkey will restart the match"
+    tech: ["React", "TypeScript", "Firebase", "PHP", "SCSS", "JavaScript", "Chart.js", "Leaflet", "Blob API", "VSCode"],
+    image: MyRunnerV1,
+    link: "/projects/MyRunner",
+    repo: "https://github.com/Markuff1/MyRunner",
+  },
+  {
+    title: "WWE Universe Tracker V3",
+    description:
+      "A full-stack platform built with React and Firebase for tracking WWE Universe Mode content, including champions, shows, title histories, and storylines. Integrated login, protected routing, and real-time user data updates with expansion toward AI chatbot support.",
+    bullets: [
+      "Developed a TypeScript-based interface for managing rosters, matches, and events with React and SCSS",
+      "Built protected routes to enforce login requirements and prevent unauthorized access",
+      "Integrated Firebase and PHP backend services for secure authentication and data persistence",
+      "Designed and stored dynamic data such as title history and weekly show logs",
+      "Began integrating a GPT-style chatbot to help new users interact with the system (in development)",
+      "Practiced penetration testing methods and applied findings to strengthen login security",
+      "Improved deployment workflow by setting up custom domain and routing via GitHub Pages"
     ],
-    "tech": ["React", "TypeScript", "JavaScript", "Chess.js", "React Chessboard"],
-    "image": ChessGame,
-    "link": "/projects/chess-app",
-    "repo": "https://github.com/Markuff1/chess-game",
-    "site": ""
+    tech: ["React", "TypeScript", "Firebase", "PHP", "SCSS", "JavaScript", "VSCode"],
+    image: WWEWrestleverseV3Image,
+    link: "/projects/WWEWrestleverseV3",
+    repo: "https://github.com/Markuff1/Wrestleverse2k25",
+    site: "https://wweuniverse.app",
+  },
+  {
+    title: "WWE Universe Tracker V2",
+    description:
+      "A static version of the WWE tracking platform built with HTML, CSS, and JavaScript. Served as an MVP to learn full deployment, domain setup, and backend login implementation using PHP.",
+    bullets: [
+      "Built layout and core features using HTML, CSS, and JavaScript",
+      "Configured and connected a custom domain via Namecheap and GitHub Pages, including CNAME setup",
+      "Implemented basic login and session management via PHP (now deprecated in favor of V3 backend)",
+      "Integrated a feedback submission system using JavaScript and Google Docs for user issue reporting"
+    ],
+    tech: ["HTML", "CSS", "JavaScript", "PHP", "Google Docs", "GitHub Pages"],
+    image: WWEWrestleverseV2Image,
+    link: "/projects/WWEWrestleverseV2",
+    repo: "https://github.com/Markuff1/WrestleVerse",
+    site: "https://thewrestleverse.co.uk/",
+  },
+  {
+    title: "2D Adventure Game",
+    description:
+      "A tile-based 2D pixel game built in Java using a custom rendering engine. Developed to improve my understanding of object-oriented programming, canvas rendering, and game mechanics.",
+    bullets: [
+      "Designed a modular game engine using Java and Eclipse IDE with tile-based rendering",
+      "Implemented collision detection, inventory logic, and health systems for in-game entities",
+      "Parsed map data from .txt files for easy expansion of levels and exploration zones",
+      "Created a performance optimization system to only render player’s active view region",
+      "Reinforced knowledge of OOP concepts like polymorphism and inheritance in entity design"
+    ],
+    tech: ["Java", "OOP", "Eclipse IDE"],
+    image: JavaGame,
+    link: "/projects/2d-adventure-game",
+    repo: "",
+    site: "",
+  },
+  {
+    title: "Happy Birthday Quiz Website",
+    description:
+      "A lightweight celebratory quiz built in React with TypeScript, showcasing dynamic forms and third-party form submission. Created for a personalized gifting experience.",
+    bullets: [
+      "Built a responsive quiz flow with animated transitions using React and SCSS",
+      "Integrated FormSpree to submit responses via email for real-time quiz results",
+      "Focused on accessibility and responsive layout for all devices"
+    ],
+    tech: ["React", "TypeScript", "FormSpree", "SCSS"],
+    image: HarryBDayPage,
+    link: "/projects/birthday-quiz",
+    repo: "",
+    site: "",
+  },
+  {
+    title: "CV Portfolio Website",
+    description:
+      "A professional, mobile-friendly portfolio site to showcase my work, skills, and resume. Built from scratch using React, SCSS, and Vite for blazing fast development and deployment.",
+    bullets: [
+      "Created modular project and experience cards to dynamically populate portfolio data",
+      "Implemented file download button to access CV PDF with click-to-download UX",
+      "Styled layout using SCSS with mobile-first breakpoints and component-based design",
+      "Deployed via GitHub Pages using Vite for optimal performance and fast load times"
+    ],
+    tech: ["React", "TypeScript", "SCSS", "Vite", "File Download"],
+    image: CVWebsite,
+    link: "",
+    repo: "https://github.com/yourusername/cv-portfolio",
+    site: "https://markuff1.github.io/mark-cv/",
+  },
+  {
+    title: "Image Resizer Tool",
+    description:
+      "A desktop utility written in Python to batch resize and compress large image files for web optimization. Created to streamline asset prep while developing other projects.",
+    bullets: [
+      "Used OpenCV to handle image resizing, quality compression, and format conversion",
+      "Built an intuitive GUI using Tkinter with error handling and file selection dialogs",
+      "Prevented upscaling to preserve image quality and support custom size constraints",
+      "Enabled adjustable JPEG quality control and success/error popups for usability"
+    ],
+    tech: ["Python", "OpenCV", "Tkinter", "File Handling"],
+    image: ImageResizer,
+    link: "/projects/image-resizer",
+    repo: "https://github.com/Markuff1/Image-Resizer",
+    site: "",
+  },
+  {
+    title: "Chess App with CPU Opponent",
+    description:
+      "A web-based chess game where users can compete against a basic AI. Developed to learn about board state management, chess logic, and interactive UIs with chess.js.",
+    bullets: [
+      "Built AI move logic using chess.js to execute legal or capturing moves based on game state",
+      "Integrated React Chessboard for piece interaction, animations, and move previews",
+      "Implemented game-over detection for checkmate, stalemate, and draw conditions",
+      "Added match restart via both button and Enter key keyboard integration",
+      "Managed board state and event logic using React hooks and custom handlers"
+    ],
+    tech: ["React", "TypeScript", "JavaScript", "Chess.js", "React Chessboard"],
+    image: ChessGame,
+    link: "/projects/chess-app",
+    repo: "https://github.com/Markuff1/chess-game",
+    site: ""
   }
-
-  ];
+];
 
   return (
     <section id="Projects" className="Projects-container">
